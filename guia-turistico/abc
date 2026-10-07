@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Technews - Portal de Noticias
+    <meta charset="UTF-8>
+  </head>
+  <body>
+    <header>
+      <h1>TechNews Senai
+      <p>O seu portal diario de inovação, programação e tecnologia web</p>
+      <nav>
+        <a href="#Destaque">Destaques
+        <a href="#Tutoriais">Tutoriais
+        <a href="#Sobre">sobre
+      </nav>
+    </header>
+    <hr>
+    <main>
+      <section id="Destaque">
+        <h2>Notícias em Destaque
+        <article>
+          <h3>HTML Semantico domina 100% das novas aplicações</h3>
+          <p>Publicado por <b>Joab Cauã Lourenço da Silva em <b>06/10/2026</b>
+          <img src="imagens/imagem.pc.webp" alt="Imagem de um computador preto" width="280">
+        </article>
+      </section>
+    <hr>
+
