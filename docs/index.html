@@ -1,0 +1,133 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tavin Burger</title>
+</head>
+<body>
+
+    <header>
+        <h1>Tavin Burger</h1>
+        <p>O sabor que conquista você!</p>
+
+        <nav>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#servicos">Cardápio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre nós</h2>
+            <p>A Tavin Burger é uma hamburgueria especializada em hambúrgueres artesanais, preparados com ingredientes selecionados e muito sabor.</p>
+
+            <img src="imagens/istockphoto-2148672887-1024x1024.jpg" alt="Hambúrguer artesanal" width="400">
+        </section>
+
+        <section id="servicos">
+            <h2>Nosso cardápio</h2>
+
+            <article>
+                <h3>Classic Burger</h3>
+                <p>Hambúrguer artesanal, queijo, alface e tomate.</p>
+                <p>Preço: R$ 22,00</p>
+            </article>
+
+            <article>
+                <h3>Cheese Bacon</h3>
+                <p>Hambúrguer artesanal, cheddar e bacon crocante.</p>
+                <p>Preço: R$ 28,00</p>
+            </article>
+
+            <article>
+                <h3>Combo Especial</h3>
+                <p>Hambúrguer, batata frita e refrigerante.</p>
+                <p>Preço: R$ 35,00</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Promoção do dia!</h2>
+            <p>Na compra de um Combo Especial, aproveite uma bebida para acompanhar seu lanche.</p>
+        </aside>
+
+        <section id="contato">
+            <h2>Faça seu pedido</h2>
+            <p>Preencha os dados abaixo para pedir seu lanche!</p>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Seus dados</legend>
+
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    <br><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+                    <br><br>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(32) 99999-9999" required>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Detalhes do pedido</legend>
+
+                    <label for="hamburguer">Escolha seu lanche:</label>
+                    <select id="hamburguer" name="hamburguer" required>
+                        <option value="">Selecione</option>
+                        <option value="classic">Classic Burger - R$ 22,00</option>
+                        <option value="bacon">Cheese Bacon - R$ 28,00</option>
+                        <option value="combo">Combo Especial - R$ 35,00</option>
+                    </select>
+                    <br><br>
+
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" max="20" value="1" required>
+                    <br><br>
+
+                    <p>Tipo de entrega:</p>
+
+                    <input type="radio" id="entrega" name="tipo_entrega" value="entrega" required>
+                    <label for="entrega">Entrega em domicílio</label>
+                    <br>
+
+                    <input type="radio" id="retirada" name="tipo_entrega" value="retirada">
+                    <label for="retirada">Retirada no estabelecimento</label>
+                    <br><br>
+
+                    <label for="pagamento">Forma de pagamento:</label>
+                    <select id="pagamento" name="pagamento" required>
+                        <option value="">Selecione</option>
+                        <option value="pix">PIX</option>
+                        <option value="cartao">Cartão</option>
+                        <option value="dinheiro">Dinheiro</option>
+                    </select>
+                    <br><br>
+
+                    <label for="observacoes">Observações:</label>
+                    <textarea id="observacoes" name="observacoes" rows="4" placeholder="Ex.: sem cebola"></textarea>
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Enviar pedido</button>
+                <button type="reset">Limpar formulário</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tavin Burger. Todos os direitos reservados.</p>
+        <p>Feito com dedicação e muito sabor!</p>
+    </footer>
+
+</body>
+</html>
+```
