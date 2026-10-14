@@ -1,83 +1,138 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Veloz Motors | Veículos Premium</title>
+    </head>
+    <body>
+        <header>
+            <h1>Veloz Motors</h1>
+            <p>Potência, estilo e confiança para quem vive acelerando.</p>
+            <nav>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </header>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Assistência Técnica JF</title>
-</head>
+        <main>
+            <section id="sobre">
+                <h2>Quem somos</h2>
+                <p>A Veloz Motors é uma concessionária moderna focada em veículos de alto desempenho, conforto e tecnologia. Oferecemos qualidade, segurança e atendimento premium para quem busca uma experiência automotiva diferenciada.</p>
+                <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80" alt="Carro esportivo de alta performance em ambiente moderno" width="500">
+            </section>
 
-<body>
-    <header>
-        <h1>Bem vindo a Assistência Técnica Lesdieva</h1>
-        <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
-    <main>
-        <section id="servicos">
-            <article>
-                <h2>Nossos serviços</h2>
-                <h3>Reparo</h3>
-                <p>Nós reparamos celulares,computadores e videogames. Traga seu aparelho a nossa assistência, realizamos o concerto em até 24 horas. <small>(alguns concertos exigem prazos mais longos)</small></p>
-                <figcaption>
-                    <img src="imagens/reparo.jpg" alt="Foto ilustrativa reparo" width="250">
-                </figcaption>
-            </article>
-            <h3>Upgrade no seu PC</h3>
-            <p><b>Esta pensando em fazer um upgrade?</b> Realizamos upgrade e fazemos um orçamento.</p>
-        </section>
-        <section id="contato">
-        <h2>Faça um orçamento agora</h2>
-        <form action="#" method="POST">
-            <fieldset>
-                <legend><b>Informações para contato</b></legend>
-                <label for="campo-nome">Nome: </label><br>
-                <input type="text" name="nome-completo" id="campo-nome" placeholder="Informe seu nome para contato" required size="40">
-                <br>
-                <label for="campo-telefone">telefone: </label><br>
-                <input type="text" name="telefone-completo" id="campo-telefone" placeholder="Informe seu telefone" required size="40">
-                <br>
-                <label for="campo-email">email: </label><br>
-                <input type="text" name="email-completo" id="campo-email" placeholder="Informe seu email" required size="40">
-                <br>
-                <label for="campo-detalhes">Detalhes: </label><br>
-                <textarea type="text" name="detalhes" rows="4" cols="40" id="campo-detalhes" placeholder="Informe detalhes sobre o serviço (opcional)"></textarea>> 
-                <br>
-                <label for="tipo-servico">Informe o tipo de serviço:</label>
-                <input  list="lista-servicos" name="tipo-servico" id="tipo-servico">
-                <datalist id="lista-servicos"">
-                    <option value="reparo"></option>
-                    <option value="upgrade"></option>
-                </datalist>
-            </fieldset>
-            <fieldset>
-                <button type="submit"><b>Confirmar seus dados</b></button>
-                <button type="reset"><b>Apagar dados preenchidos</b></button>
-            </fieldset>
-        </form>
-        </section>
-    </main>
-        <hr>
-        <aside id="sobre">
-            <h3><b>Perguntas frequentes</b></h3>
-            <h4>Vocês realizam envio?</h4>
-            <p>Sim, realizamos envio de Seg a Sex comprados online com garantia da loja caso defeitos ou problemas de entrega.</p>
-            <h4>Quero fazer um orçamento, tenho que pagar?</h4>
-            <p>Não, a cobrança só é realizado se o cliente solicitar o serviço,realizamos o orçamento gratuitamente.</p>
-            <h4>Posso pedir reembolso caso alguma peça tenha defeito?</h4>
-            <p>Sim, realizamos reembolso conforme as normas da empresa, respeitanto o prazo de 7 dias depois da entrega se algum de nossos produtos possuir defeito ou arrependimento.</p>
-            <hr>
-            <h2>Funcionamento</h2>
-            <p>Seg a Sab das 08:00 as 16:00</p>
-            <p>Rua marechal deódoro - Avenida Braganças - Juiz de fora</p>
-            <p>Telefone: (32) 4444-4444</p>
+            <section id="servicos">
+                <h2>Modelos em destaque</h2>
+
+                <article>
+                    <h3>Carros esportivos</h3>
+                    <p>Veículos com design agressivo, motores potentes e tecnologia avançada para quem gosta de velocidade e performance.</p>
+                </article>
+
+                <article>
+                    <h3>SUV premium</h3>
+                    <p>Conforto, espaço e robustez para quem quer um carro forte para o dia a dia e viagens.</p>
+                </article>
+
+                <article>
+                    <h3>Financiamento</h3>
+                    <p>Solucionamos o processo com condições flexíveis, assessoria especializada e atendimento rápido.</p>
+                </article>
+            </section>
+
+            <section id="contato">
+                <h2>Solicite seu test drive</h2>
+
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Dados do cliente</legend>
+
+                        <label for="nome">Nome completo:</label><br>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required size="40"><br><br>
+
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" placeholder="seuemail@email.com" required size="40"><br><br>
+
+                        <label for="telefone">Telefone:</label><br>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(32) 98888-7777" required size="40"><br><br>
+
+                        <label for="data">Data disponível para visita:</label><br>
+                        <input type="date" id="data" name="data" required><br><br>
+
+                        <label for="veiculo">Modelo desejado:</label><br>
+                        <select id="veiculo" name="veiculo" required>
+                            <option value="">Selecione</option>
+                            <option value="sedan">Sedã</option>
+                            <option value="suv">SUV</option>
+                            <option value="esportivo">Esportivo</option>
+                            <option value="hatch">Hatch</option>
+                        </select><br><br>
+
+                        <label>Forma de interesse:</label><br>
+                        <input type="radio" id="compra" name="interesse" value="compra" checked>
+                        <label for="compra">Compra</label>
+                        <input type="radio" id="financiamento" name="interesse" value="financiamento">
+                        <label for="financiamento">Financiamento</label>
+                        <input type="radio" id="test-drive" name="interesse" value="test-drive">
+                        <label for="test-drive">Test drive</label><br><br>
+
+                        <label>Preferências extras:</label><br>
+                        <input type="checkbox" id="ar" name="extras" value="ar">
+                        <label for="ar">Ar-condicionado</label><br>
+                        <input type="checkbox" id="camera" name="extras" value="camera">
+                        <label for="camera">Câmera de ré</label><br>
+                        <input type="checkbox" id="blindado" name="extras" value="blindado">
+                        <label for="blindado">Blindado</label><br><br>
+
+                        <label for="prioridade">Nível de urgência:</label><br>
+                        <input type="range" id="prioridade" name="prioridade" min="1" max="10" value="7"><br><br>
+
+                        <label for="cor">Cor preferida:</label><br>
+                        <input type="color" id="cor" name="cor" value="#f97316"><br><br>
+
+                        <label for="mensagem">Detalhes do interesse:</label><br>
+                        <textarea id="mensagem" name="mensagem" rows="5" cols="50" placeholder="Descreva o modelo, orçamento e preferência do veículo"></textarea><br><br>
+
+                        <label for="marca">Marca preferida:</label><br>
+                        <input type="text" id="marca" name="marca" list="lista-marcas" placeholder="Escolha ou digite a marca" size="40">
+                        <datalist id="lista-marcas">
+                            <option value="Toyota"></option>
+                            <option value="Volkswagen"></option>
+                            <option value="Chevrolet"></option>
+                            <option value="Ford"></option>
+                            <option value="BMW"></option>
+                        </datalist>
+                    </fieldset>
+
+                    <fieldset>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <aside id="faq">
+            <h3>Perguntas frequentes</h3>
+            <h4>Vocês fazem financiamento?</h4>
+            <p>Sim. Trabalhamos com financiamento e consultoria para encontrar a melhor condição para você.</p>
+
+            <h4>Posso agendar test drive?</h4>
+            <p>Claro. Basta preencher o formulário e nossa equipe entrará em contato para confirmar o horário.</p>
+
+            <h4>Qual é o horário de atendimento?</h4>
+            <p>Atendemos de segunda a sábado, das 08:00 às 18:00.</p>
+
+            <h2>Contato</h2>
+            <p>Av. das Américas, 245, Centro - Juiz de Fora</p>
+            <p>Telefone: (32) 3344-9988</p>
         </aside>
-        <hr>
-    <footer>
-        <p>&#x1f16d; @2026 Tech Lesdieva LTDA. todos os Direitos Reservados</p>
-    </footer>
 
-</body>
+        <footer>
+            <p>&copy; 2026 Veloz Motors. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Otavio Augusto.</p>
+        </footer>
+    </body>
 </html>
